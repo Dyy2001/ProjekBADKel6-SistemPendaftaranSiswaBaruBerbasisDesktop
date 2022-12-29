@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SPSBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="Id_admin" />
+          </Key>
+          <Property Name="Id_admin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="no_hp" Type="nvarchar" MaxLength="50" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="asal_sekolah">
+          <Key>
+            <PropertyRef Name="id_asal_sekolah" />
+          </Key>
+          <Property Name="id_asal_sekolah" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="asal_sekolah" Type="nvarchar" MaxLength="50" />
+          <Property Name="npsn" Type="int" />
+          <Property Name="alamat_sekolah" Type="nvarchar" MaxLength="50" />
+          <Property Name="kecamatan" Type="nvarchar" MaxLength="50" />
+          <Property Name="kabupaten_kota" Type="nvarchar" MaxLength="50" />
+          <Property Name="provinsi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ayah">
+          <Key>
+            <PropertyRef Name="Id_ayah" />
+          </Key>
+          <Property Name="Id_ayah" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nik_ayah" Type="int" />
+          <Property Name="nama_ayah" Type="nvarchar" MaxLength="50" />
+          <Property Name="tanggal_lahir_ayah" Type="date" />
+          <Property Name="pekerjaan_ayah" Type="nvarchar" MaxLength="50" />
+          <Property Name="alamat_ayah" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ibu">
+          <Key>
+            <PropertyRef Name="Id_ibu" />
+          </Key>
+          <Property Name="Id_ibu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nik_ibu" Type="int" />
+          <Property Name="nama_ibu" Type="nvarchar" MaxLength="50" />
+          <Property Name="tanggal_lahir_ibu" Type="date" />
+          <Property Name="pekerjaan_ibu" Type="nvarchar" MaxLength="50" />
+          <Property Name="alamat_ibu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="nik">
+          <Key>
+            <PropertyRef Name="id_nik" />
+          </Key>
+          <Property Name="id_nik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nik" Type="int" />
+          <Property Name="tanggal_lahir" Type="date" />
+          <Property Name="anak_ke" Type="int" />
+          <Property Name="jumlah_saudara" Type="int" />
+        </EntityType>
+        <EntityType Name="Siswa">
+          <Key>
+            <PropertyRef Name="Id_siswa" />
+          </Key>
+          <Property Name="Id_siswa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nama" Type="nvarchar" MaxLength="50" />
+          <Property Name="nisn" Type="int" />
+          <Property Name="nik" Type="int" />
+          <Property Name="tahun_ajaran" Type="date" />
+          <Property Name="asal_sekolah" Type="int" />
+          <Property Name="wali" Type="int" />
+          <Property Name="ayah" Type="int" />
+          <Property Name="ibu" Type="int" />
+        </EntityType>
+        <EntityType Name="wali">
+          <Key>
+            <PropertyRef Name="Id_wali" />
+          </Key>
+          <Property Name="Id_wali" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nik_wali" Type="nvarchar" MaxLength="50" />
+          <Property Name="nama_wali" Type="nvarchar" MaxLength="50" />
+          <Property Name="tanggal_lahir_wali" Type="date" />
+          <Property Name="pekerjaan_wali" Type="nvarchar" MaxLength="50" />
+          <Property Name="alamat_wali" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Siswa_ToTable">
+          <End Role="nik" Type="Self.nik" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nik">
+              <PropertyRef Name="id_nik" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="nik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_1">
+          <End Role="asal_sekolah" Type="Self.asal_sekolah" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="asal_sekolah">
+              <PropertyRef Name="id_asal_sekolah" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="asal_sekolah" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_2">
+          <End Role="wali" Type="Self.wali" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="wali">
+              <PropertyRef Name="Id_wali" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="wali" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_3">
+          <End Role="ayah" Type="Self.ayah" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ayah">
+              <PropertyRef Name="Id_ayah" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="ayah" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_4">
+          <End Role="ibu" Type="Self.ibu" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ibu">
+              <PropertyRef Name="Id_ibu" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="ibu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SPSBModelStoreContainer">
+          <EntitySet Name="admin" EntityType="Self.admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="asal_sekolah" EntityType="Self.asal_sekolah" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ayah" EntityType="Self.ayah" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ibu" EntityType="Self.ibu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="nik" EntityType="Self.nik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Siswa" EntityType="Self.Siswa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="wali" EntityType="Self.wali" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Siswa_ToTable" Association="Self.FK_Siswa_ToTable">
+            <End Role="nik" EntitySet="nik" />
+            <End Role="Siswa" EntitySet="Siswa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_1" Association="Self.FK_Siswa_ToTable_1">
+            <End Role="asal_sekolah" EntitySet="asal_sekolah" />
+            <End Role="Siswa" EntitySet="Siswa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_2" Association="Self.FK_Siswa_ToTable_2">
+            <End Role="wali" EntitySet="wali" />
+            <End Role="Siswa" EntitySet="Siswa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_3" Association="Self.FK_Siswa_ToTable_3">
+            <End Role="ayah" EntitySet="ayah" />
+            <End Role="Siswa" EntitySet="Siswa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_4" Association="Self.FK_Siswa_ToTable_4">
+            <End Role="ibu" EntitySet="ibu" />
+            <End Role="Siswa" EntitySet="Siswa" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SPSBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="Id_admin" />
+          </Key>
+          <Property Name="Id_admin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="no_hp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="asal_sekolah">
+          <Key>
+            <PropertyRef Name="id_asal_sekolah" />
+          </Key>
+          <Property Name="id_asal_sekolah" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="asal_sekolah1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="npsn" Type="Int32" />
+          <Property Name="alamat_sekolah" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kecamatan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kabupaten_kota" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="provinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Siswas" Relationship="Self.FK_Siswa_ToTable_1" FromRole="asal_sekolah" ToRole="Siswa" />
+        </EntityType>
+        <EntityType Name="ayah">
+          <Key>
+            <PropertyRef Name="Id_ayah" />
+          </Key>
+          <Property Name="Id_ayah" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nik_ayah" Type="Int32" />
+          <Property Name="nama_ayah" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tanggal_lahir_ayah" Type="DateTime" Precision="0" />
+          <Property Name="pekerjaan_ayah" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="alamat_ayah" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Siswas" Relationship="Self.FK_Siswa_ToTable_3" FromRole="ayah" ToRole="Siswa" />
+        </EntityType>
+        <EntityType Name="ibu">
+          <Key>
+            <PropertyRef Name="Id_ibu" />
+          </Key>
+          <Property Name="Id_ibu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nik_ibu" Type="Int32" />
+          <Property Name="nama_ibu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tanggal_lahir_ibu" Type="DateTime" Precision="0" />
+          <Property Name="pekerjaan_ibu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="alamat_ibu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Siswas" Relationship="Self.FK_Siswa_ToTable_4" FromRole="ibu" ToRole="Siswa" />
+        </EntityType>
+        <EntityType Name="nik">
+          <Key>
+            <PropertyRef Name="id_nik" />
+          </Key>
+          <Property Name="id_nik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nik1" Type="Int32" />
+          <Property Name="tanggal_lahir" Type="DateTime" Precision="0" />
+          <Property Name="anak_ke" Type="Int32" />
+          <Property Name="jumlah_saudara" Type="Int32" />
+          <NavigationProperty Name="Siswas" Relationship="Self.FK_Siswa_ToTable" FromRole="nik" ToRole="Siswa" />
+        </EntityType>
+        <EntityType Name="Siswa">
+          <Key>
+            <PropertyRef Name="Id_siswa" />
+          </Key>
+          <Property Name="Id_siswa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nisn" Type="Int32" />
+          <Property Name="nik" Type="Int32" />
+          <Property Name="tahun_ajaran" Type="DateTime" Precision="0" />
+          <Property Name="asal_sekolah" Type="Int32" />
+          <Property Name="wali" Type="Int32" />
+          <Property Name="ayah" Type="Int32" />
+          <Property Name="ibu" Type="Int32" />
+          <NavigationProperty Name="asal_sekolah1" Relationship="Self.FK_Siswa_ToTable_1" FromRole="Siswa" ToRole="asal_sekolah" />
+          <NavigationProperty Name="ayah1" Relationship="Self.FK_Siswa_ToTable_3" FromRole="Siswa" ToRole="ayah" />
+          <NavigationProperty Name="ibu1" Relationship="Self.FK_Siswa_ToTable_4" FromRole="Siswa" ToRole="ibu" />
+          <NavigationProperty Name="nik1" Relationship="Self.FK_Siswa_ToTable" FromRole="Siswa" ToRole="nik" />
+          <NavigationProperty Name="wali1" Relationship="Self.FK_Siswa_ToTable_2" FromRole="Siswa" ToRole="wali" />
+        </EntityType>
+        <EntityType Name="wali">
+          <Key>
+            <PropertyRef Name="Id_wali" />
+          </Key>
+          <Property Name="Id_wali" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nik_wali" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nama_wali" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tanggal_lahir_wali" Type="DateTime" Precision="0" />
+          <Property Name="pekerjaan_wali" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="alamat_wali" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Siswas" Relationship="Self.FK_Siswa_ToTable_2" FromRole="wali" ToRole="Siswa" />
+        </EntityType>
+        <Association Name="FK_Siswa_ToTable_1">
+          <End Role="asal_sekolah" Type="Self.asal_sekolah" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="asal_sekolah">
+              <PropertyRef Name="id_asal_sekolah" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="asal_sekolah" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_3">
+          <End Role="ayah" Type="Self.ayah" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ayah">
+              <PropertyRef Name="Id_ayah" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="ayah" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_4">
+          <End Role="ibu" Type="Self.ibu" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ibu">
+              <PropertyRef Name="Id_ibu" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="ibu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable">
+          <End Role="nik" Type="Self.nik" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nik">
+              <PropertyRef Name="id_nik" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="nik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Siswa_ToTable_2">
+          <End Role="wali" Type="Self.wali" Multiplicity="0..1" />
+          <End Role="Siswa" Type="Self.Siswa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="wali">
+              <PropertyRef Name="Id_wali" />
+            </Principal>
+            <Dependent Role="Siswa">
+              <PropertyRef Name="wali" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SPSBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="admins" EntityType="Self.admin" />
+          <EntitySet Name="asal_sekolah" EntityType="Self.asal_sekolah" />
+          <EntitySet Name="ayahs" EntityType="Self.ayah" />
+          <EntitySet Name="ibus" EntityType="Self.ibu" />
+          <EntitySet Name="niks" EntityType="Self.nik" />
+          <EntitySet Name="Siswas" EntityType="Self.Siswa" />
+          <EntitySet Name="walis" EntityType="Self.wali" />
+          <AssociationSet Name="FK_Siswa_ToTable_1" Association="Self.FK_Siswa_ToTable_1">
+            <End Role="asal_sekolah" EntitySet="asal_sekolah" />
+            <End Role="Siswa" EntitySet="Siswas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_3" Association="Self.FK_Siswa_ToTable_3">
+            <End Role="ayah" EntitySet="ayahs" />
+            <End Role="Siswa" EntitySet="Siswas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_4" Association="Self.FK_Siswa_ToTable_4">
+            <End Role="ibu" EntitySet="ibus" />
+            <End Role="Siswa" EntitySet="Siswas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable" Association="Self.FK_Siswa_ToTable">
+            <End Role="nik" EntitySet="niks" />
+            <End Role="Siswa" EntitySet="Siswas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Siswa_ToTable_2" Association="Self.FK_Siswa_ToTable_2">
+            <End Role="wali" EntitySet="walis" />
+            <End Role="Siswa" EntitySet="Siswas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SPSBModelStoreContainer" CdmEntityContainer="SPSBEntities">
+          <EntitySetMapping Name="admins">
+            <EntityTypeMapping TypeName="SPSBModel.admin">
+              <MappingFragment StoreEntitySet="admin">
+                <ScalarProperty Name="Id_admin" ColumnName="Id_admin" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="no_hp" ColumnName="no_hp" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="asal_sekolah">
+            <EntityTypeMapping TypeName="SPSBModel.asal_sekolah">
+              <MappingFragment StoreEntitySet="asal_sekolah">
+                <ScalarProperty Name="id_asal_sekolah" ColumnName="id_asal_sekolah" />
+                <ScalarProperty Name="asal_sekolah1" ColumnName="asal_sekolah" />
+                <ScalarProperty Name="npsn" ColumnName="npsn" />
+                <ScalarProperty Name="alamat_sekolah" ColumnName="alamat_sekolah" />
+                <ScalarProperty Name="kecamatan" ColumnName="kecamatan" />
+                <ScalarProperty Name="kabupaten_kota" ColumnName="kabupaten_kota" />
+                <ScalarProperty Name="provinsi" ColumnName="provinsi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ayahs">
+            <EntityTypeMapping TypeName="SPSBModel.ayah">
+              <MappingFragment StoreEntitySet="ayah">
+                <ScalarProperty Name="Id_ayah" ColumnName="Id_ayah" />
+                <ScalarProperty Name="nik_ayah" ColumnName="nik_ayah" />
+                <ScalarProperty Name="nama_ayah" ColumnName="nama_ayah" />
+                <ScalarProperty Name="tanggal_lahir_ayah" ColumnName="tanggal_lahir_ayah" />
+                <ScalarProperty Name="pekerjaan_ayah" ColumnName="pekerjaan_ayah" />
+                <ScalarProperty Name="alamat_ayah" ColumnName="alamat_ayah" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ibus">
+            <EntityTypeMapping TypeName="SPSBModel.ibu">
+              <MappingFragment StoreEntitySet="ibu">
+                <ScalarProperty Name="Id_ibu" ColumnName="Id_ibu" />
+                <ScalarProperty Name="nik_ibu" ColumnName="nik_ibu" />
+                <ScalarProperty Name="nama_ibu" ColumnName="nama_ibu" />
+                <ScalarProperty Name="tanggal_lahir_ibu" ColumnName="tanggal_lahir_ibu" />
+                <ScalarProperty Name="pekerjaan_ibu" ColumnName="pekerjaan_ibu" />
+                <ScalarProperty Name="alamat_ibu" ColumnName="alamat_ibu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="niks">
+            <EntityTypeMapping TypeName="SPSBModel.nik">
+              <MappingFragment StoreEntitySet="nik">
+                <ScalarProperty Name="id_nik" ColumnName="id_nik" />
+                <ScalarProperty Name="nik1" ColumnName="nik" />
+                <ScalarProperty Name="tanggal_lahir" ColumnName="tanggal_lahir" />
+                <ScalarProperty Name="anak_ke" ColumnName="anak_ke" />
+                <ScalarProperty Name="jumlah_saudara" ColumnName="jumlah_saudara" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Siswas">
+            <EntityTypeMapping TypeName="SPSBModel.Siswa">
+              <MappingFragment StoreEntitySet="Siswa">
+                <ScalarProperty Name="Id_siswa" ColumnName="Id_siswa" />
+                <ScalarProperty Name="nama" ColumnName="nama" />
+                <ScalarProperty Name="nisn" ColumnName="nisn" />
+                <ScalarProperty Name="nik" ColumnName="nik" />
+                <ScalarProperty Name="tahun_ajaran" ColumnName="tahun_ajaran" />
+                <ScalarProperty Name="asal_sekolah" ColumnName="asal_sekolah" />
+                <ScalarProperty Name="wali" ColumnName="wali" />
+                <ScalarProperty Name="ayah" ColumnName="ayah" />
+                <ScalarProperty Name="ibu" ColumnName="ibu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="walis">
+            <EntityTypeMapping TypeName="SPSBModel.wali">
+              <MappingFragment StoreEntitySet="wali">
+                <ScalarProperty Name="Id_wali" ColumnName="Id_wali" />
+                <ScalarProperty Name="nik_wali" ColumnName="nik_wali" />
+                <ScalarProperty Name="nama_wali" ColumnName="nama_wali" />
+                <ScalarProperty Name="tanggal_lahir_wali" ColumnName="tanggal_lahir_wali" />
+                <ScalarProperty Name="pekerjaan_wali" ColumnName="pekerjaan_wali" />
+                <ScalarProperty Name="alamat_wali" ColumnName="alamat_wali" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

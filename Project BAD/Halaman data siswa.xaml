@@ -1,0 +1,57 @@
+﻿<Window x:Class="Project_BAD.Halaman_data_siswa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_BAD"
+        mc:Ignorable="d"
+        Title="Halaman_data_siswa"
+        WindowState="Maximized" Height="450" Width="800"
+        WindowStyle="SingleBorderWindow">
+    <Grid Background="#FF363062">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="DATA SISWA" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="22" Foreground="White"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="349" Margin="26,52,0,0" Stroke="Black" VerticalAlignment="Top" Width="752" RadiusX="23.733" RadiusY="23.733" Fill="#FF4D4C7D"/>
+            <DataGrid Margin="70,101,66,82" Background="Transparent">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="#" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding Number}"/>
+                    <DataGridTemplateColumn Header="Nama" IsReadOnly="True" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Width="25" Height="25" CornerRadius="50" Margin="0 0 10 0" Background="{Binding BgColor}">
+                                        <TextBlock Text="{Binding Character}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Margin="0 0 0 1"/>
+                                    </Border>
+
+                                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="NISN" Binding="{Binding NISN}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="NIK" Binding="{Binding NIK}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="Tahun Ajaran" Binding="{Binding Tahun_ajaran}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="Asal Sekolah" Binding="{Binding Asal_sekolah}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="Wali" Binding="{Binding Wali}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="Ayah" Binding="{Binding Ayah}" IsReadOnly="True" Width="*"/>
+                    <DataGridTextColumn Header="Ibu" Binding="{Binding Ibu}" IsReadOnly="True" Width="*"/>
+                    <DataGridTemplateColumn Header="Operations" IsReadOnly="True" Width="auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button x:Name="edit" Content="Edit" Click="btnEdit" HorizontalAlignment="Left" Margin="556,360,0,0" VerticalAlignment="Top" Height="26" Width="86" Background="#FF827397" BorderBrush="#FF827397" Foreground="#FFFDFDFD" FontFamily="Adobe Garamond Pro Bold" FontSize="14" AutomationProperties.Name="bt_Edit"/>
+                                    <Button x:Name="detail" Content="Detail" Click="btnDetail" HorizontalAlignment="Left" Margin="556,360,0,0" VerticalAlignment="Top" Height="26" Width="86" Background="#FF827397" BorderBrush="#FF827397" Foreground="#FFFDFDFD" FontFamily="Adobe Garamond Pro Bold" FontSize="14" AutomationProperties.Name="bt_Detail"/>
+                                    <Button x:Name="hapus" Content="Hapus" Click="btnHapus" HorizontalAlignment="Left" Margin="556,360,0,0" VerticalAlignment="Top" Height="26" Width="86" Background="#FF827397" BorderBrush="#FF827397" Foreground="#FFFDFDFD" FontFamily="Adobe Garamond Pro Bold" FontSize="14" AutomationProperties.Name="bt_Hapus"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Tambah Data Siswa" HorizontalAlignment="Left" Margin="41,66,0,0" VerticalAlignment="Top" Height="23" Width="140" Click="Buttontbh" FontFamily="Adobe Garamond Pro Bold" FontSize="16" Background="#FF827397" Foreground="White" AutomationProperties.Name="bt_Tambah"/>
+            <TextBox HorizontalAlignment="Left" Margin="203,66,0,0" TextWrapping="Wrap" Text="Cari Data Siswa" VerticalAlignment="Top" Width="156" Height="23" Foreground="White" Background="#FF785D9A" FontFamily="Adobe Garamond Pro Bold" FontSize="18" TextAlignment="Left"/>
+            <Button Content="Halaman Menu" HorizontalAlignment="Left" Margin="615,367,0,0" VerticalAlignment="Top" Height="23" Width="140" Click="Buttonmenu" FontFamily="Adobe Garamond Pro Bold" FontSize="16" Background="#FF827397" Foreground="White" AutomationProperties.Name="bt_menuutama"/>
+        </Grid>
+    </Grid>
+</Window>

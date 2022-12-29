@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SPSBModelStoreContainer" CdmEntityContainer="SPSBEntities1">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="SPSBModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="Id_admin" ColumnName="Id_admin" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="no_hp" ColumnName="no_hp" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="asal_sekolah">
+      <EntityTypeMapping TypeName="SPSBModel.asal_sekolah">
+        <MappingFragment StoreEntitySet="asal_sekolah">
+          <ScalarProperty Name="id_asal_sekolah" ColumnName="id_asal_sekolah" />
+          <ScalarProperty Name="asal_sekolah1" ColumnName="asal_sekolah" />
+          <ScalarProperty Name="npsn" ColumnName="npsn" />
+          <ScalarProperty Name="alamat_sekolah" ColumnName="alamat_sekolah" />
+          <ScalarProperty Name="kecamatan" ColumnName="kecamatan" />
+          <ScalarProperty Name="kabupaten_kota" ColumnName="kabupaten_kota" />
+          <ScalarProperty Name="provinsi" ColumnName="provinsi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ayahs">
+      <EntityTypeMapping TypeName="SPSBModel.ayah">
+        <MappingFragment StoreEntitySet="ayah">
+          <ScalarProperty Name="Id_ayah" ColumnName="Id_ayah" />
+          <ScalarProperty Name="nik_ayah" ColumnName="nik_ayah" />
+          <ScalarProperty Name="nama_ayah" ColumnName="nama_ayah" />
+          <ScalarProperty Name="tanggal_lahir_ayah" ColumnName="tanggal_lahir_ayah" />
+          <ScalarProperty Name="pekerjaan_ayah" ColumnName="pekerjaan_ayah" />
+          <ScalarProperty Name="alamat_ayah" ColumnName="alamat_ayah" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ibus">
+      <EntityTypeMapping TypeName="SPSBModel.ibu">
+        <MappingFragment StoreEntitySet="ibu">
+          <ScalarProperty Name="Id_ibu" ColumnName="Id_ibu" />
+          <ScalarProperty Name="nik_ibu" ColumnName="nik_ibu" />
+          <ScalarProperty Name="nama_ibu" ColumnName="nama_ibu" />
+          <ScalarProperty Name="tanggal_lahir_ibu" ColumnName="tanggal_lahir_ibu" />
+          <ScalarProperty Name="pekerjaan_ibu" ColumnName="pekerjaan_ibu" />
+          <ScalarProperty Name="alamat_ibu" ColumnName="alamat_ibu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="niks">
+      <EntityTypeMapping TypeName="SPSBModel.nik">
+        <MappingFragment StoreEntitySet="nik">
+          <ScalarProperty Name="id_nik" ColumnName="id_nik" />
+          <ScalarProperty Name="nik1" ColumnName="nik" />
+          <ScalarProperty Name="tanggal_lahir" ColumnName="tanggal_lahir" />
+          <ScalarProperty Name="anak_ke" ColumnName="anak_ke" />
+          <ScalarProperty Name="jumlah_saudara" ColumnName="jumlah_saudara" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siswas">
+      <EntityTypeMapping TypeName="SPSBModel.Siswa">
+        <MappingFragment StoreEntitySet="Siswa">
+          <ScalarProperty Name="Id_siswa" ColumnName="Id_siswa" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="nisn" ColumnName="nisn" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="tahun_ajaran" ColumnName="tahun_ajaran" />
+          <ScalarProperty Name="asal_sekolah" ColumnName="asal_sekolah" />
+          <ScalarProperty Name="wali" ColumnName="wali" />
+          <ScalarProperty Name="ayah" ColumnName="ayah" />
+          <ScalarProperty Name="ibu" ColumnName="ibu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="walis">
+      <EntityTypeMapping TypeName="SPSBModel.wali">
+        <MappingFragment StoreEntitySet="wali">
+          <ScalarProperty Name="Id_wali" ColumnName="Id_wali" />
+          <ScalarProperty Name="nik_wali" ColumnName="nik_wali" />
+          <ScalarProperty Name="nama_wali" ColumnName="nama_wali" />
+          <ScalarProperty Name="tanggal_lahir_wali" ColumnName="tanggal_lahir_wali" />
+          <ScalarProperty Name="pekerjaan_wali" ColumnName="pekerjaan_wali" />
+          <ScalarProperty Name="alamat_wali" ColumnName="alamat_wali" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,109 @@
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\bin\Debug\Project BAD.exe.config
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\bin\Debug\Project BAD.exe
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\bin\Debug\Project BAD.pdb
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.AssemblyReference.cache
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.SuggestedBindingRedirects.cache
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\MainWindow.g.cs
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\App.g.cs
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.cache
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.lref
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\MainWindow.baml
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.g.resources
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project_BAD.Properties.Resources.resources
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.GenerateResource.cache
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.CoreCompileInputs.cache
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.exe
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Project BAD.pdb
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Daftar.g.cs
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Info Pengguna.g.cs
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Daftar.baml
+C:\My File\Sems 4\BAD\Project BAD\Project BAD\obj\Debug\Info Pengguna.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.AssemblyReference.cache
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.SuggestedBindingRedirects.cache
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Daftar.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Detail Data Orangtua_Wali.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Detail Data Siswa.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Edit Data Orangtua_Wali.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Edit Data Siswa.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\halam Statistic.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Halam Utama.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Halaman data siswa.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Info Pengguna.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\MainWindow.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Tambah Data Orangtua_wali.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Tambah Data Siswa.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\App.g.cs
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.cache
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.lref
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.exe
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.pdb
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\bin\Debug\Project BAD.exe.config
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\bin\Debug\Project BAD.exe
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\bin\Debug\Project BAD.pdb
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Daftar.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Detail Data Orangtua_Wali.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Detail Data Siswa.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Edit Data Orangtua_Wali.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Edit Data Siswa.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\halam Statistic.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Halam Utama.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Halaman data siswa.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Info Pengguna.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\MainWindow.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Tambah Data Orangtua_wali.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Tambah Data Siswa.baml
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.g.resources
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project_BAD.Properties.Resources.resources
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.GenerateResource.cache
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.CoreCompileInputs.cache
+D:\Documents\Kuliah\Semester 4\BAD\1_KEL 6 BAD\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.CopyComplete
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\Project BAD.exe.config
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\Project BAD.exe
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\Project BAD.pdb
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.csprojAssemblyReference.cache
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Daftar.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Detail Data Orangtua_Wali.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Detail Data Siswa.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Edit Data Orangtua_Wali.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Edit Data Siswa.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\halam Statistic.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Halam Utama.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Halaman data siswa.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Info Pengguna.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\MainWindow.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Tambah Data Orangtua_wali.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Tambah Data Siswa.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\App.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.cache
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD_MarkupCompile.lref
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Daftar.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Detail Data Orangtua_Wali.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Detail Data Siswa.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Edit Data Orangtua_Wali.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Edit Data Siswa.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\halam Statistic.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Halam Utama.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Halaman data siswa.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Info Pengguna.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\MainWindow.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Tambah Data Orangtua_wali.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Tambah Data Siswa.baml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.g.resources
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project_BAD.Properties.Resources.resources
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.GenerateResource.cache
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.CoreCompileInputs.cache
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.csproj.CopyComplete
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.exe
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD.pdb
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\EntityFramework.dll
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\EntityFramework.xml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Project BAD_Content.g.cs
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.dll
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.pdb
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.xml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\WINDOWS 10 PRO\Downloads\Compressed\Project BAD\Project BAD\obj\Debug\Detail asal sekolah.g.cs

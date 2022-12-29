@@ -1,0 +1,35 @@
+﻿<Window x:Class="Project_BAD.Detail_Data_Siswa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_BAD"
+        mc:Ignorable="d"
+       Title="Detail_Data_Siswa"
+        WindowState="Maximized" Height="450" Width="800"
+        WindowStyle="SingleBorderWindow">
+    <Grid Background="#FF363062">
+        <Rectangle HorizontalAlignment="Center" Height="366" Margin="0,58,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" RadiusX="23.733" RadiusY="23.733" Fill="#FF4D4C7D"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="DETAIL DATA SISWA" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="22" Foreground="White"/>
+        <Button Content="Data Siswa" HorizontalAlignment="Left" Margin="274,70,0,0" VerticalAlignment="Top" Background="#FF827397" Foreground="White" FontFamily="Adobe Garamond Pro Bold" FontSize="16" Click="Button_Click" Height="27" Width="93" AutomationProperties.Name="bt_datasiswa"/>
+        <Button Content="Data Orangtua/Wali" HorizontalAlignment="Left" Margin="372,70,0,0" VerticalAlignment="Top" Background="#FF827397" Foreground="White" FontFamily="Adobe Garamond Pro Bold" FontSize="16" Click="Button_Click" Height="27" Width="155" AutomationProperties.Name="bt_dataorangtua/wali"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,133,0,0" TextWrapping="Wrap" Text="Nama Lengkap" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,176,0,0" TextWrapping="Wrap" Text="NIK" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,218,0,0" TextWrapping="Wrap" Text="Tanggal Lahir" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,261,0,0" TextWrapping="Wrap" Text="Alamat" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,306,0,0" TextWrapping="Wrap" Text="Anak Ke" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,349,0,0" TextWrapping="Wrap" Text="Jumlah Saudara" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,133,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,176,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,218,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,261,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,306,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,349,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Adobe Garamond Pro Bold" FontSize="20" Foreground="White"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,132,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,170,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,217,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,259,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,300,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="274,343,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+    </Grid>
+</Window>
